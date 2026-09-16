@@ -1,0 +1,7 @@
+{
+  "name": "Ploger",
+  "description": "TikTok-inspired short-form video discovery, Google Photos intelligent visual search (by object, location, and face), and auto-backed up cloud galleries alongside real-time Gen Z social sharing. Developed by ASAAKURIGO AI DEVELOPMENT.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

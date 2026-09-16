@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Typography Helpers */
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-mono-space {
+  font-family: 'Space Mono', monospace;
+}
+
+.font-pixel {
+  font-family: 'VT323', monospace;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Digicam Date Stamp Glow */
+.digicam-stamp {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.15em;
+  color: #ff9d00;
+  text-shadow: 0 0 6px rgba(255, 157, 0, 0.7), 0 0 12px rgba(255, 157, 0, 0.4);
+}
+
+.digicam-stamp-green {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.15em;
+  color: #39ff14;
+  text-shadow: 0 0 6px rgba(57, 255, 20, 0.7), 0 0 12px rgba(57, 255, 20, 0.4);
+}
+
+/* Scanlines Effect for Y2K & Cyber Themes */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.45);
+}
+
+/* Chromatic Aberration & Glitch FX */
+@keyframes glitch-anim {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.glitch-active {
+  animation: glitch-anim 0.35s infinite linear alternate-reverse;
+}
+
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 3px 3px;
+  pointer-events: none;
+}
+
+
